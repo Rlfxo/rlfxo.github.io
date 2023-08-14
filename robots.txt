@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://rlfxo.github.io/sitemap.xml

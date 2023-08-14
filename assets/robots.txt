@@ -7,4 +7,4 @@ User-agent: *
 
 Disallow: /norobots/
 
-Sitemap: {{ '/sitemap.xml' | absolute_url }}
+Sitemap: {{ 'https://rlfxo.github.io/sitemap.xml' | absolute_url }}
