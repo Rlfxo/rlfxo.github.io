@@ -1,10 +1,11 @@
 ---
 title: 바이크 셰이딩 (Bikeshedding)
-author: rlfxo
+author: Rlfxo
 date: 2023-08-14 8:10:00 +0900
 categories: [Blogging, Test]
 tags: [writing]
-render_with_liquid: false
+pin: true
+# render_with_liquid: false
 ---
 
 # 바이크셰딩이란 무엇인가?
