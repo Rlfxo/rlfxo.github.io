@@ -1,8 +1,11 @@
 ---
-layout: post
-title:  "unordered_map"
-date:   2022-06-06 15:23:46 +0900
-categories: CodingTest Hash
+title: unordered_map
+author: Rlfxo
+date: 2022-06-06 16:23:34 +0900
+categories: [Blog, CodingTest]
+tags: [Hash]
+pin: false
+# render_with_liquid: false
 ---
 
 Note <br>

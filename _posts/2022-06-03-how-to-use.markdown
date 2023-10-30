@@ -1,8 +1,11 @@
 ---
-layout: post
-title:  "마크다운 markdown 작성법"
-date:   2022-06-03 14:06:36 +0900
-categories: Markdown Blog
+title: 마크다운 markdown 작성법
+author: Rlfxo
+date: 2022-06-03 16:23:34 +0900
+categories: [Blog]
+tags: [Markdown]
+pin: false
+# render_with_liquid: false
 ---
 
 ## 이 블로그는 

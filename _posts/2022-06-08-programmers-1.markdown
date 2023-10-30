@@ -1,10 +1,12 @@
 ---
-layout: post
-title:  "[Programmers] x만큼 간격이 있는 n개의 숫자"
-date:   2022-06-08 08:23:56 +0900
-categories: CodingTest Vector
+title: [Programmers] x만큼 간격이 있는 n개의 숫자
+author: Rlfxo
+date:  2022-06-08 08:23:56 +0900
+categories: [Blog, CodingTest]
+tags: [Vector]
+pin: false
+# render_with_liquid: false
 ---
-
 ![Scr2](/img/220608/220608_1Scr2.png)
 
 Note <br>

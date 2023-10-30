@@ -1,8 +1,11 @@
 ---
-layout: post
-title:  "[Programmers] 직사각형 별찍기"
-date:   2022-06-07 16:13:46 +0900
-categories: CodingTest For
+title: [Programmers] 직사각형 별찍기
+author: Rlfxo
+date:  2022-06-07 16:13:46 +0900
+categories: [Blog, CodingTest]
+tags: [Loop]
+pin: false
+# render_with_liquid: false
 ---
 
 ![Scr2](/img/220607/220607Scr2.png)
