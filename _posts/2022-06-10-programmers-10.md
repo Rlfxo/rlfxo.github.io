@@ -1,8 +1,11 @@
 ---
-layout: post
-title:  "[Programmers] 제일 작은 수 제거하기"
-date:   2022-06-10 10:23:56 +0900
-categories: CodingTest
+title: (Programmers) 제일 작은 수 제거하기
+author: Rlfxo
+date:  2022-06-10 10:23:56 +0900
+categories: [Blog, CodingTest]
+tags: [None]
+pin: false
+# render_with_liquid: false
 ---
 
 ![Scr2](/img/220610/220610_1Scr2.png)

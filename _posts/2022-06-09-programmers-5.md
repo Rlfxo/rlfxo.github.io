@@ -1,8 +1,11 @@
 ---
-layout: post
-title:  "[Programmers] 하샤드 수"
-date:   2022-06-09 08:23:56 +0900
-categories: CodingTest While
+title: (Programmers) 하샤드 수
+author: Rlfxo
+date:  2022-06-09 08:23:56 +0900
+categories: [Blog, CodingTest]
+tags: [While]
+pin: false
+# render_with_liquid: false
 ---
 
 ![Scr2](/img/220609/220609_1Scr2.png)

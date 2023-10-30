@@ -1,8 +1,11 @@
 ---
-layout: post
-title:  "[Programmers] 행렬의 덧셈"
-date:   2022-06-08 10:13:36 +0900
-categories: CodingTest Vector
+title: (Programmers) 행렬의 덧셈 
+author: Rlfxo
+date:  2022-06-08 10:13:36 +0900
+categories: [Blog, CodingTest]
+tags: [Vector]
+pin: false
+# render_with_liquid: false
 ---
 
 ![Scr2](/img/220608/220608_2Scr2.png)

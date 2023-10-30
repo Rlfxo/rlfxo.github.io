@@ -1,8 +1,11 @@
 ---
-layout: post
-title:  "[Programmers] 평균 구하기"
-date:   2022-06-09 08:23:56 +0900
-categories: CodingTest
+title: (Programmers) 평균 구하기
+author: Rlfxo
+date:  2022-06-09 08:23:56 +0900
+categories: [Blog, CodingTest]
+tags: [None]
+pin: false
+# render_with_liquid: false
 ---
 
 ![Scr2](/img/220609/220609_2Scr2.png)

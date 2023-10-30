@@ -1,8 +1,11 @@
 ---
-layout: post
-title:  "[Programmers] 정수 내림차순으로 배치하기"
-date:   2022-06-10 10:23:56 +0900
-categories: CodingTest
+title: (Programmers) 정수 내림차순으로 배치하기
+author: Rlfxo
+date:  2022-06-10 10:23:56 +0900
+categories: [Blog, CodingTest]
+tags: [None]
+pin: false
+# render_with_liquid: false
 ---
 
 ![Scr2](/img/220610/220610_3Scr1.png)

@@ -1,8 +1,11 @@
 ---
-layout: post
-title:  "[Programmers] 핸드폰 번호 가리기"
-date:   2022-06-08 12:53:26 +0900
-categories: CodingTest String
+title: (Programmers) 핸드폰 번호 가리기
+author: Rlfxo
+date:  2022-06-08 12:53:26 +0900
+categories: [Blog, CodingTest]
+tags: [String]
+pin: false
+# render_with_liquid: false
 ---
 
 ![Scr2](/img/220608/220608_3Scr2.png)

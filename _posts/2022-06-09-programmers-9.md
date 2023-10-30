@@ -1,8 +1,11 @@
 ---
-layout: post
-title:  "[Programmers] 짝수와 홀수"
-date:   2022-06-09 16:23:56 +0900
-categories: CodingTest
+title: (Programmers) 짝수와 홀수
+author: Rlfxo
+date:  2022-06-09 16:23:56 +0900
+categories: [Blog, CodingTest]
+tags: [None]
+pin: false
+# render_with_liquid: false
 ---
 
 ![Scr2](/img/220609/220609_5Scr2.png)

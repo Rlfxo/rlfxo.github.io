@@ -1,8 +1,11 @@
 ---
-layout: post
-title:  "[Programmers] 자릿수 더하기"
-date:   2022-06-10 10:23:56 +0900
-categories: CodingTest String
+title: (Programmers) 자릿수 더하기
+author: Rlfxo
+date:  2022-06-10 10:23:56 +0900
+categories: [Blog, CodingTest]
+tags: [String]
+pin: false
+# render_with_liquid: false
 ---
 
 ![Scr2](/img/220610/220610_5Scr2.png)

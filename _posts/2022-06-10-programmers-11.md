@@ -1,8 +1,11 @@
 ---
-layout: post
-title:  "[Programmers] 정수 제곱근 판별"
-date:   2022-06-10 10:23:56 +0900
-categories: CodingTest Cmath
+title: (Programmers) 정수 제곱근 판별
+author: Rlfxo
+date:  2022-06-10 10:23:56 +0900
+categories: [Blog, CodingTest]
+tags: [Cmath]
+pin: false
+# render_with_liquid: false
 ---
 
 ![Scr2](/img/220610/220610_2Scr2.png)

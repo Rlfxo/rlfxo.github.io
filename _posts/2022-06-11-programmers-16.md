@@ -1,8 +1,11 @@
 ---
-layout: post
-title:  "[Programmers] 약수의 합"
-date:   2022-06-11 10:23:56 +0900
-categories: CodingTest
+title: (Programmers) 약수의 합
+author: Rlfxo
+date:  2022-06-10 10:23:56 +0900
+categories: [Blog, CodingTest]
+tags: [None]
+pin: false
+# render_with_liquid: false
 ---
 
 ![Scr2](/img/220611/220611_Scr2.png)

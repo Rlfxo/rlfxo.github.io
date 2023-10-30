@@ -1,8 +1,11 @@
 ---
-layout: post
-title:  "[Programmers] 콜라츠 추측"
-date:   2022-06-09 10:23:56 +0900
-categories: CodingTest
+title: (Programmers) 콜라츠 추측
+author: Rlfxo
+date:  2022-06-09 10:23:56 +0900
+categories: [Blog, CodingTest]
+tags: [None]
+pin: false
+# render_with_liquid: false
 ---
 
 ![Scr2](/img/220609/220609_3Scr2.png)

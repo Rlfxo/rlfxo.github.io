@@ -1,8 +1,11 @@
 ---
-layout: post
-title:  "[Programmers] 이상한 문자 만들기"
-date:   2022-06-10 10:23:56 +0900
-categories: CodingTest String
+title: (Programmers) 이상한 문자 만들기
+author: Rlfxo
+date:  2022-06-10 10:23:56 +0900
+categories: [Blog, CodingTest]
+tags: [String]
+pin: false
+# render_with_liquid: false
 ---
 
 ![Scr2](/img/220610/220610_6Scr2.png)
