@@ -2,8 +2,8 @@
 title: (Programmers) 직사각형 별찍기
 author: Rlfxo
 date:  2022-06-07 16:13:46 +0900
-categories: [Blog, CodingTest]
-tags: [Loop]
+categories: [CodingTest]
+tags: [LOOP]
 pin: false
 # render_with_liquid: false
 ---

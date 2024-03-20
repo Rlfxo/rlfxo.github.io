@@ -2,8 +2,8 @@
 title: (Programmers) 이상한 문자 만들기
 author: Rlfxo
 date:  2022-06-10 10:23:56 +0900
-categories: [Blog, CodingTest]
-tags: [String]
+categories: [CodingTest]
+tags: [STRING]
 pin: false
 # render_with_liquid: false
 ---

@@ -2,8 +2,8 @@
 title: (Programmers) 정수 제곱근 판별
 author: Rlfxo
 date:  2022-06-10 10:23:56 +0900
-categories: [Blog, CodingTest]
-tags: [Cmath]
+categories: [CodingTest]
+tags: [MATH]
 pin: false
 # render_with_liquid: false
 ---

@@ -2,8 +2,8 @@
 title: (Programmers) 행렬의 덧셈 
 author: Rlfxo
 date:  2022-06-08 10:13:36 +0900
-categories: [Blog, CodingTest]
-tags: [Vector]
+categories: [CodingTest]
+tags: [VECTOR]
 pin: false
 # render_with_liquid: false
 ---

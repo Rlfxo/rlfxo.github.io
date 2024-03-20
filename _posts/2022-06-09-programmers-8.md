@@ -2,7 +2,7 @@
 title: (Programmers) 최대공약수와 최소공배수
 author: Rlfxo
 date:  2022-06-09 12:23:56 +0900
-categories: [Blog, CodingTest]
+categories: [CodingTest]
 tags: [None]
 pin: false
 # render_with_liquid: false

@@ -2,8 +2,8 @@
 title: (Programmers) 핸드폰 번호 가리기
 author: Rlfxo
 date:  2022-06-08 12:53:26 +0900
-categories: [Blog, CodingTest]
-tags: [String]
+categories: [CodingTest]
+tags: [STRING]
 pin: false
 # render_with_liquid: false
 ---

@@ -2,8 +2,8 @@
 title: (Programmers) 하샤드 수
 author: Rlfxo
 date:  2022-06-09 08:23:56 +0900
-categories: [Blog, CodingTest]
-tags: [While]
+categories: [CodingTest]
+tags: [LOOP]
 pin: false
 # render_with_liquid: false
 ---

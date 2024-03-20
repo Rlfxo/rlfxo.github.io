@@ -2,8 +2,8 @@
 title: unordered_map
 author: Rlfxo
 date: 2022-06-06 16:23:34 +0900
-categories: [Blog, CodingTest]
-tags: [Hash]
+categories: [CodingTest]
+tags: [HASH]
 pin: false
 # render_with_liquid: false
 ---

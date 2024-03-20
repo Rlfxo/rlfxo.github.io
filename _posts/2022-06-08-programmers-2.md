@@ -2,8 +2,8 @@
 title: (Programmers) x만큼 간격이 있는 n개의 숫자
 author: Rlfxo
 date:  2022-06-08 08:23:56 +0900
-categories: [Blog, CodingTest]
-tags: [Vector]
+categories: [CodingTest]
+tags: [VECTOR]
 pin: false
 # render_with_liquid: false
 ---

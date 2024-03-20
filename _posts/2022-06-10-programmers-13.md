@@ -2,7 +2,7 @@
 title: (Programmers) 자연수 뒤집어 배열로 만들기
 author: Rlfxo
 date:  2022-06-10 10:23:56 +0900
-categories: [Blog, CodingTest]
+categories: [CodingTest]
 tags: [None]
 pin: false
 # render_with_liquid: false
