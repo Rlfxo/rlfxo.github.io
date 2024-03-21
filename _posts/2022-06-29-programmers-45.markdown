@@ -1,8 +1,10 @@
 ---
-layout: post
-title:  "[Programmers] 완주하지 못한 선수"
-date:   2022-06-29 11:23:56 +0900
-categories: CodingTest Resolve
+title: (Programmers) 완주하지 못한 선수
+date:  2022-06-29 11:23:56 +0900
+categories: [CodingTest]
+tags: [None]
+pin: false
+# render_with_liquid: false
 ---
 
 ![Scr2](/img/220629/220629_5Scr2.png)

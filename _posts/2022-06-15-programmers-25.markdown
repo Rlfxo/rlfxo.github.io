@@ -1,8 +1,11 @@
 ---
-layout: post
-title:  "[Programmers] 문자열 내 마음대로 정렬하기"
-date:   2022-06-15 10:23:56 +0900
-categories: CodingTest
+title: (Programmers) 문자열 내 마음대로 정렬하기
+author: Rlfxo
+date:  2022-06-15 10:23:56 +0900
+categories: [CodingTest]
+tags: [None]
+pin: false
+# render_with_liquid: false
 ---
 
 ![Scr2](/img/220615/220615_3Scr2.png)

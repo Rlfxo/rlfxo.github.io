@@ -1,8 +1,11 @@
 ---
-layout: post
-title:  "[Programmers] 나누어 떨어지는 숫자 배열"
-date:   2022-06-15 10:23:56 +0900
-categories: CodingTest
+title: (Programmers) 나누어 떨어지는 숫자 배열
+author: Rlfxo
+date:  2022-06-15 10:23:56 +0900
+categories: [CodingTest]
+tags: [None]
+pin: false
+# render_with_liquid: false
 ---
 
 ![Scr2](/img/220615/220615_5Scr2.png)

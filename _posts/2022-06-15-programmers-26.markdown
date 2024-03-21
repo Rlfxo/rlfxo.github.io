@@ -1,8 +1,11 @@
 ---
-layout: post
-title:  "[Programmers] 두 정수 사이의 합"
-date:   2022-06-15 10:23:56 +0900
-categories: CodingTest
+title: (Programmers) 두 정수 사이의 합
+author: Rlfxo
+date:  2022-06-15 10:23:56 +0900
+categories: [CodingTest]
+tags: [None]
+pin: false
+# render_with_liquid: false
 ---
 
 ![Scr2](/img/220615/220615_4Scr2.png)

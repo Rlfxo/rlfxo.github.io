@@ -2,8 +2,8 @@
 title: 바이크 셰이딩 (Bikeshedding)
 author: Rlfxo
 date: 2023-08-14 8:10:00 +0900
-categories: [Blogging, Test]
-tags: [writing]
+categories: [Test]
+tags: [TEST]
 pin: true
 # render_with_liquid: false
 ---

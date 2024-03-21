@@ -1,8 +1,10 @@
 ---
-layout: post
-title:  "[Programmers] 약수의 개수와 덧셈"
-date:   2022-06-27 10:23:56 +0900
-categories: CodingTest
+title: (Programmers) 약수의 개수와 덧셈
+date:  2022-06-27 10:23:56 +0900
+categories: [CodingTest]
+tags: [None]
+pin: false
+# render_with_liquid: false
 ---
 
 ![Scr2](/img/220627/220627_5Scr2.png)

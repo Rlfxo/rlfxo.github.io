@@ -1,8 +1,10 @@
 ---
-layout: post
-title:  "[Programmers] 실패율"
-date:   2022-06-28 11:23:56 +0900
-categories: CodingTest Hash Kakao Resolve
+title: (Programmers) 실패율
+date:  2022-06-28 11:23:56 +0900
+categories: [CodingTest]
+tags: [HASH]
+pin: false
+# render_with_liquid: false
 ---
 
 ![Scr2](/img/220628/220628_Scr2.png)

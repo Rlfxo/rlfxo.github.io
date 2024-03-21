@@ -1,8 +1,11 @@
 ---
-layout: post
-title:  "[Programmers] 시저 암호"
-date:   2022-06-13 10:23:56 +0900
-categories: CodingTest String
+title: (Programmers) 시저 암호
+author: Rlfxo
+date:  2022-06-13 10:23:56 +0900
+categories: [CodingTest]
+tags: [None]
+pin: false
+# render_with_liquid: false
 ---
 
 ![Scr2](/img/220613/220613_1Scr2.png)

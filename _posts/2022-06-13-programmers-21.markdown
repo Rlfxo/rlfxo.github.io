@@ -1,8 +1,11 @@
 ---
-layout: post
-title:  "[Programmers] 서울에서 김서방 찾기"
-date:   2022-06-13 10:23:56 +0900
-categories: CodingTest
+title: (Programmers) 서울에서 김서방 찾기
+author: Rlfxo
+date:  2022-06-13 10:23:56 +0900
+categories: [CodingTest]
+tags: [None]
+pin: false
+# render_with_liquid: false
 ---
 
 ![Scr2](/img/220613/220613_5Scr2.png)

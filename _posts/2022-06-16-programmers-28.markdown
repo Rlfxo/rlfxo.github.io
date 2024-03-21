@@ -1,8 +1,11 @@
 ---
-layout: post
-title:  "[Programmers] 같은 숫자는 싫어"
-date:   2022-06-16 10:23:56 +0900
-categories: CodingTest
+title: (Programmers) 같은 숫자는 싫어
+author: Rlfxo
+date:  2022-06-16 10:23:56 +0900
+categories: [CodingTest]
+tags: [None]
+pin: false
+# render_with_liquid: false
 ---
 
 ![Scr2](/img/220616/220616_1Scr2.png)

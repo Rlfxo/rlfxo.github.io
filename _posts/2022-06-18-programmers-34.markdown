@@ -1,8 +1,11 @@
 ---
-layout: post
-title:  "[Programmers] 최소직사각형"
-date:   2022-06-18 11:23:56 +0900
-categories: CodingTest
+title: (Programmers) 최소직사각형
+author: Rlfxo
+date:  2022-06-18 11:23:56 +0900
+categories: [CodingTest]
+tags: [None]
+pin: false
+# render_with_liquid: false
 ---
 
 ![Scr2](/img/220618/220618_3Scr2.png)

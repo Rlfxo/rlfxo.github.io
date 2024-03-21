@@ -1,8 +1,11 @@
 ---
-layout: post
-title:  "[Programmers] 비밀 지도"
-date:   2022-06-17 10:23:56 +0900
-categories: CodingTest Kakao
+title: (Programmers) 비밀 지도
+author: Rlfxo
+date:  2022-06-17 10:23:56 +0900
+categories: [CodingTest]
+tags: [None]
+pin: false
+# render_with_liquid: false
 ---
 
 ![Scr2](/img/220617/220617_2Scr2.png)

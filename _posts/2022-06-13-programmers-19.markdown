@@ -1,8 +1,11 @@
 ---
-layout: post
-title:  "[Programmers] 수박수박수박수박수박수?"
-date:   2022-06-13 10:23:56 +0900
-categories: CodingTest
+title: (Programmers) 수박수박수박수박수박수?
+author: Rlfxo
+date:  2022-06-13 10:23:56 +0900
+categories: [CodingTest]
+tags: [None]
+pin: false
+# render_with_liquid: false
 ---
 
 ![Scr2](/img/220613/220613_3Scr1.png)

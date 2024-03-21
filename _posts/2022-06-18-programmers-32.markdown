@@ -1,8 +1,11 @@
 ---
-layout: post
-title:  "[Programmers] 부족한 금액 계산하기"
-date:   2022-06-18 11:23:56 +0900
-categories: CodingTest
+title: (Programmers) 부족한 금액 계산하기
+author: Rlfxo
+date:  2022-06-18 11:23:56 +0900
+categories: [CodingTest]
+tags: [None]
+pin: false
+# render_with_liquid: false
 ---
 
 ![Scr2](/img/220618/220618_1Scr2.png)

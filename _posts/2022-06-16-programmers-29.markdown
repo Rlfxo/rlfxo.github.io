@@ -1,8 +1,11 @@
 ---
-layout: post
-title:  "[Programmers] 가운데 글자 가져오기"
-date:   2022-06-16 10:23:56 +0900
-categories: CodingTest
+title: (Programmers) 가운데 글자 가져오기
+author: Rlfxo
+date:  2022-06-16 10:23:56 +0900
+categories: [CodingTest]
+tags: [None]
+pin: false
+# render_with_liquid: false
 ---
 
 ![Scr2](/img/220616/220616_2Scr2.png)

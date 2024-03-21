@@ -1,8 +1,10 @@
 ---
-layout: post
-title:  "[Programmers] K번째 수"
-date:   2022-06-29 11:23:56 +0900
-categories: CodingTest
+title: (Programmers) K번째 수
+date:  2022-06-29 11:23:56 +0900
+categories: [CodingTest]
+tags: [None]
+pin: false
+# render_with_liquid: false
 ---
 
 ![Scr2](/img/220629/220629_4Scr2.png)

@@ -1,8 +1,11 @@
 ---
-layout: post
-title:  "[Programmers] 나머지가 1이 되는 수 찾기"
-date:   2022-06-18 11:23:56 +0900
-categories: CodingTest
+title: (Programmers) 나머지가 1이 되는 수 찾기
+author: Rlfxo
+date:  2022-06-18 11:23:56 +0900
+categories: [CodingTest]
+tags: [None]
+pin: false
+# render_with_liquid: false
 ---
 
 ![Scr2](/img/220618/220618_2Scr2.png)
