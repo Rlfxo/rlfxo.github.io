@@ -1,8 +1,11 @@
 ---
-layout: post
-title:  "[Programmers] 가장 큰 수"
-date:   2022-07-09 10:23:56 +0900
-categories: CodingTest Programmers
+title: (Programmers) 가장 큰 수
+author: Rlfxo
+date:  2022-07-09 10:23:56 +0900
+categories: [CodingTest]
+tags: [None]
+pin: false
+# render_with_liquid: false
 ---
 
 ![Scr2](/img/220709/220709_1Scr2.png)

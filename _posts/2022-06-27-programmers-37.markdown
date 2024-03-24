@@ -1,5 +1,6 @@
 ---
 title: (Programmers) 예산
+author: Rlfxo
 date:  2022-06-27 10:23:56 +0900
 categories: [CodingTest]
 tags: [None]

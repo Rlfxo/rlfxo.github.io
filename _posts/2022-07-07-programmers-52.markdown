@@ -1,8 +1,11 @@
 ---
-layout: post
-title:  "[Programmers] 신고 결과 받기"
-date:   2022-07-07 10:23:56 +0900
-categories: CodingTest Kakao
+title: (Programmers) 신고 결과 받기
+author: Rlfxo
+date:  2022-07-07 10:23:56 +0900
+categories: [CodingTest]
+tags: [None]
+pin: false
+# render_with_liquid: false
 ---
 
 ![Scr2](/img/220707/220707_1Scr2.png)

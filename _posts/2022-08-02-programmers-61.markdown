@@ -1,8 +1,11 @@
 ---
-layout: post
-title:  "[Programmers] 숫자 문자열과 영단어"
-date:   2022-08-02 10:23:56 +0900
-categories: CodingTest Kakao Regex
+title: (Programmers) 숫자 문자열과 영단어
+author: Rlfxo
+date:  2022-08-02 10:23:56 +0900
+categories: [CodingTest]
+tags: [None]
+pin: false
+# render_with_liquid: false
 ---
 
 ![Scr2](/img/220802/220802_2Scr2.png)

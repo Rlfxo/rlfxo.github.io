@@ -1,5 +1,6 @@
 ---
 title: (Programmers) 완주하지 못한 선수
+author: Rlfxo
 date:  2022-06-29 11:23:56 +0900
 categories: [CodingTest]
 tags: [None]

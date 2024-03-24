@@ -1,8 +1,11 @@
 ---
-layout: post
-title:  "[Programmers] 오픈채팅방"
-date:   2022-08-03 10:23:56 +0900
-categories: CodingTest Kakao Unordered_map
+title: (Programmers) 오픈채팅방
+author: Rlfxo
+date:  2022-08-03 10:23:56 +0900
+categories: [CodingTest]
+tags: [None]
+pin: false
+# render_with_liquid: false
 ---
 
 ![Scr2](/img/220803/220803_2Scr2.png)

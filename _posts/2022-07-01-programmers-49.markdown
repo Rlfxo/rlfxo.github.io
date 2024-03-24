@@ -1,8 +1,11 @@
 ---
-layout: post
-title:  "[Programmers] 없는 숫자 더하기"
-date:   2022-07-01 10:23:56 +0900
-categories: CodingTest
+title: (Programmers) 없는 숫자 더하기
+author: Rlfxo
+date:  2022-07-01 10:23:56 +0900
+categories: [CodingTest]
+tags: [None]
+pin: false
+# render_with_liquid: false
 ---
 
 ![Scr2](/img/220701/220701_4Scr2.png)

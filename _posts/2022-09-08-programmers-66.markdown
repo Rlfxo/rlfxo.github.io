@@ -1,8 +1,11 @@
 ---
-layout: post
-title:  "[Programmers] 최댓값과 최솟값"
-date:   2022-09-08 10:23:56 +0900
-categories: CodingTest String
+title: (Programmers) 최댓값과 최솟값
+author: Rlfxo
+date:  2022-09-08 10:23:56 +0900
+categories: [CodingTest]
+tags: [None]
+pin: false
+# render_with_liquid: false
 ---
 
 ![Scr2](/img/220908/220908_2Scr2.png)

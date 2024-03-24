@@ -1,8 +1,11 @@
 ---
-layout: post
-title:  "[Programmers] 문자열 압축"
-date:   2022-08-03 10:23:56 +0900
-categories: CodingTest Kakao
+title: (Programmers) 문자열 압축
+author: Rlfxo
+date:  2022-08-03 10:23:56 +0900
+categories: [CodingTest]
+tags: [None]
+pin: false
+# render_with_liquid: false
 ---
 
 ![Scr2](/img/220803/220803_1Scr2.png)

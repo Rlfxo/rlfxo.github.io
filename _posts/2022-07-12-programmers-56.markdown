@@ -1,8 +1,11 @@
 ---
-layout: post
-title:  "[Programmers] 124 나라의 숫자"
-date:   2022-07-12 10:23:56 +0900
-categories: CodingTest
+title: (Programmers) 124 나라의 숫자
+author: Rlfxo
+date:  2022-07-12 10:23:56 +0900
+categories: [CodingTest]
+tags: [None]
+pin: false
+# render_with_liquid: false
 ---
 
 ![Scr2](/img/220712/220712_1Scr2.png)

@@ -1,8 +1,11 @@
 ---
-layout: post
-title:  "[Programmers] 신규 아이디 추천"
-date:   2022-08-02 10:23:56 +0900
-categories: CodingTest Kakao String
+title: (Programmers) 신규 아이디 추천
+author: Rlfxo
+date:  2022-08-02 10:23:56 +0900
+categories: [CodingTest]
+tags: [None]
+pin: false
+# render_with_liquid: false
 ---
 
 ![Scr2](/img/220802/220802_1Scr2.png)

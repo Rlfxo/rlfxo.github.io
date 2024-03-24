@@ -1,8 +1,11 @@
 ---
-layout: post
-title:  "[Programmers] N으로 표현"
-date:   2022-07-21 10:23:56 +0900
-categories: CodingTest DP
+title: (Programmers) N으로 표현
+author: Rlfxo
+date:  2022-07-21 10:23:56 +0900
+categories: [CodingTest]
+tags: [None]
+pin: false
+# render_with_liquid: false
 ---
 
 ![Scr2](/img/220721/220721_1Scr2.png)

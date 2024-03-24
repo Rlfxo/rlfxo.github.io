@@ -1,8 +1,11 @@
 ---
-layout: post
-title:  "[Programmers] 여행경로"
-date:   2022-07-22 10:23:56 +0900
-categories: CodingTest DFS
+title: (Programmers) 여행경로
+author: Rlfxo
+date:  2022-07-21 10:23:56 +0900
+categories: [CodingTest]
+tags: [None]
+pin: false
+# render_with_liquid: false
 ---
 
 ![Scr2](/img/220722/220722_1Scr2.png)

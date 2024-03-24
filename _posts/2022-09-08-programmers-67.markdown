@@ -1,8 +1,11 @@
 ---
-layout: post
-title:  "[Programmers] JadenCase 문자열 만들기"
-date:   2022-09-08 10:23:56 +0900
-categories: CodingTest String
+title: (Programmers) JadenCase 문자열 만들기
+author: Rlfxo
+date:  2022-09-08 10:23:56 +0900
+categories: [CodingTest]
+tags: [None]
+pin: false
+# render_with_liquid: false
 ---
 
 ![Scr2](/img/220908/220908_3Scr2.png)

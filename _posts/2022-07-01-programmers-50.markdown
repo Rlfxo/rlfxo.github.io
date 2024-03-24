@@ -1,8 +1,11 @@
 ---
-layout: post
-title:  "[Programmers] 크레인 인형뽑기 게임"
-date:   2022-07-01 10:23:56 +0900
-categories: CodingTest Kakao
+title: (Programmers) 크레인 인형뽑기 게임
+author: Rlfxo
+date:  2022-07-01 10:23:56 +0900
+categories: [CodingTest]
+tags: [None]
+pin: false
+# render_with_liquid: false
 ---
 
 ![Scr2](/img/220701/220701_5Scr2.png)

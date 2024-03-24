@@ -1,8 +1,11 @@
 ---
-layout: post
-title:  "[Programmers] 더 맵게"
-date:   2022-07-20 10:23:56 +0900
-categories: CodingTest PriorityQueue
+title: (Programmers) 더 맵게
+author: Rlfxo
+date:  2022-07-20 10:23:56 +0900
+categories: [CodingTest]
+tags: [None]
+pin: false
+# render_with_liquid: false
 ---
 
 ![Scr2](/img/220720/220720_1Scr2.png)

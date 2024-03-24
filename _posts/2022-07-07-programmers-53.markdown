@@ -1,8 +1,11 @@
 ---
-layout: post
-title:  "[Programmers] 로또의 최고 순위와 최저 순위"
-date:   2022-07-07 10:23:56 +0900
-categories: CodingTest
+title: (Programmers) 로또의 최고 순위와 최저 순위
+author: Rlfxo
+date:  2022-07-07 10:23:56 +0900
+categories: [CodingTest]
+tags: [None]
+pin: false
+# render_with_liquid: false
 ---
 
 ![Scr2](/img/220707/220707_2Scr2.png)

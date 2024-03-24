@@ -1,8 +1,11 @@
 ---
-layout: post
-title:  "[Programmers] 키패드 누르기"
-date:   2022-07-01 10:23:56 +0900
-categories: CodingTest Kakao
+title: (Programmers) 키패드 누르기
+author: Rlfxo
+date:  2022-07-01 10:23:56 +0900
+categories: [CodingTest]
+tags: [None]
+pin: false
+# render_with_liquid: false
 ---
 
 ![Scr2](/img/220705/220705_1Scr1.png)

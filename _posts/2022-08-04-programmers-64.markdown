@@ -1,8 +1,11 @@
 ---
-layout: post
-title:  "[Programmers] 컬러링북"
-date:   2022-08-03 10:23:56 +0900
-categories: CodingTest Kakao Bfs
+title: (Programmers) 컬러링북
+author: Rlfxo
+date:  2022-08-04 10:23:56 +0900
+categories: [CodingTest]
+tags: [BFS]
+pin: false
+# render_with_liquid: false
 ---
 
 ![Scr2](/img/220804/220804_1Scr2.png)

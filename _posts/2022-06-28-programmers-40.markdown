@@ -1,5 +1,6 @@
 ---
 title: (Programmers) 실패율
+author: Rlfxo
 date:  2022-06-28 11:23:56 +0900
 categories: [CodingTest]
 tags: [HASH]
