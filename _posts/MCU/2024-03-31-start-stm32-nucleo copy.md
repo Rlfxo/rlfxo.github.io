@@ -1,8 +1,8 @@
 ---
-title: STM32 NUCLEO 0 "시작하기"
+title: NUCLEO G474 시작하기
 author: Rlfxo
 date: 2024-03-31 17:32:00 +0900
-categories: [MCU]
+categories: [STM32 NUCLEO G474RE]
 tags: [NUCLEO, STM32, G474]
 pin: false
 # render_with_liquid: false
