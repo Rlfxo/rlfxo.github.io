@@ -11,17 +11,17 @@ pin: false
 ## Main title
 > 간단한 요약
 
-#### 목차
+#### Contents
 
 1. [목차 처음](#1-처음-내용)
 2. [목차 다음](#2-다음-내용)
 
 ### 1 처음 내용
-![img1](/img/meme/about.jpeg)
+![img1](/img/meme/about.jpeg){: .normal }
 
 
 ### 2 다음 내용
-[파일내용](/download/PDF/stm32g474re.pdf)
+[파일내용](/download/PDF/stm32g474re.pdf){: .normal }
 
 
 

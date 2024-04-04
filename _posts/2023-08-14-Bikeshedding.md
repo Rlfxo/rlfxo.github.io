@@ -4,8 +4,7 @@ author: Rlfxo
 date: 2023-08-14 8:10:00 +0900
 categories: [Test]
 tags: [TEST]
-pin: true
-# render_with_liquid: false
+pin: false 
 ---
 
 # 바이크셰딩이란 무엇인가?

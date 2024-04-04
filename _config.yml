@@ -16,7 +16,7 @@ timezone: Asia/Seoul
 
 title: Rlfxo # the main title
 
-tagline: 그냥 라쿤 # it will display as the sub-title
+tagline: Embedded SW Development Blog # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   A Embedded, Software Development and Firmware for permanant software.
