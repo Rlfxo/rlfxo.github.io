@@ -1,5 +1,5 @@
 ---
-title: ST-Link message "UR connection mode is defined with the HWrst reset mode"
+title: ST-Link message UR connection mode is defined
 author: Rlfxo
 date: 2024-05-01 16:33:00 +0900
 categories: [ST-Link]
