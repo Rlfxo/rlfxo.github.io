@@ -1,15 +1,4 @@
----
-layout: default
-refactor: true
-panel_includes:
-  - toc
-tail_includes:
-  - related-posts
-  - post-nav
-  - comments
----
-
-{% include lang.html %}
+@@ -12,139 +12,139 @@ tail_includes: {% include lang.html %}
 
 <article class="px-1">
   <header>
@@ -81,6 +70,7 @@ tail_includes:
             </em>
             {{ site.data.locales[lang].post.pageview_measure }}
           </span>
+
           {% endif %}
 
           <!-- read time -->
@@ -91,16 +81,6 @@ tail_includes:
   </header>
 
   <div class="content">{{ content }}</div>
-
-  <script
-    src="https://utteranc.es/client.js"
-    repo="Rlfxo/rlfxo.github.io"
-    issue-term="pathname"
-    label="ripple"
-    theme="gruvbox-dark"
-    crossorigin="anonymous"
-    async
-  ></script>
 
   <div class="post-tail-wrapper text-muted">
     <!-- categories -->
@@ -114,6 +94,7 @@ tail_includes:
       >
       {%- unless forloop.last -%},{%- endunless -%} {% endfor %}
     </div>
+
     {% endif %}
 
     <!-- tags -->
@@ -148,5 +129,4 @@ tail_includes:
     </div>
     <!-- .post-tail-bottom -->
   </div>
-  <!-- div.post-tail-wrapper -->
 </article>
