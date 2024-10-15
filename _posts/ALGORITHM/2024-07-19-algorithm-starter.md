@@ -1,9 +1,9 @@
 ---
-title: Algorithm Problem solving [0] -Tips-
+title: Algorithm C++ -Tips-
 author: Rlfxo
 date: 2024-07-19 16:48:00 +0900
 categories: [ALGORITHM]
-tags: [PS]
+tags: [Tip]
 pin: true
 # image:
 #   path: /img/240501/ex_2.png
@@ -11,6 +11,7 @@ pin: true
 
 # 딱 기억해 바보야 
 
+### 참고링크모음
 https://modoocode.com/225
 
 ```
