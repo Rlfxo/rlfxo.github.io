@@ -19,3 +19,16 @@ jekyll serve # 로컬 서버 실행
   - source ~/.zshrc
 - node
   - brew install node
+
+#### commit lint
+- build
+- ci
+- chore
+- docs
+- feat
+- fix
+- perf
+- refactor
+- revert
+- style
+- test

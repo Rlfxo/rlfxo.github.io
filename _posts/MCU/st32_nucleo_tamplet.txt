@@ -4,7 +4,7 @@ author: Rlfxo
 date: 2024-03-31 17:32:00 +0900
 categories: [STM32 NUCLEO G474RE]
 tags: [NUCLEO, STM32, G474]
-pin: true
+pin: false
 image:
   path: /img/240331/g474re.jpeg
 ---
