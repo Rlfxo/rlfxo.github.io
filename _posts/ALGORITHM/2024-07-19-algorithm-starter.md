@@ -143,6 +143,7 @@ for (iter = v.begin(); iter != v.end(); iter++){
 ##### Map Search
 - m[key]; // key로 Value찾기
 - m.find(key); // key로 iterator찾기
+  
 ``` c
 // Tip 
 map<string, int> m;
@@ -166,13 +167,13 @@ B:3    ----    arr[3] = B
 cout << m[key];
 //Value로 찾기
 cout << mapping[value];
-
 ```
----
 
+---
 ### STL Algorithm
 #### 압축
 - unique : 중복 정리
+  
 ``` c
 unique(v.begin(), v.end()); // 1 2 2 3 4 -> 1 2 3 4 2
 //원본유지 영역의 첫 주소 값을 반환
@@ -181,6 +182,7 @@ v.erase(unique(v.begin(), v.end()), v.end()); // 지우기
 
 #### 정렬
 - sort : 일반 정렬
+  
 ``` c
 sort(v.begin(), v.end()); // 순차정렬
 
@@ -200,8 +202,8 @@ sort(v.begin(), v.end(), greater_compare()); // 역순정렬
 #include <functional>
 sort(vec.begin(), vec.end(), less<int>()); // 순차정렬
 sort(vec.begin(), vec.end(), greater<int>()); // 역순정렬
-
 ```
+
 - stable_sort : 크기가 같은 원소의 순서 보존
 - partial_sort : 일부분만 정렬
 
