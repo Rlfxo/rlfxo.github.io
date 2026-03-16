@@ -1,4 +1,95 @@
----
-layout: home
-# Index page
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RLFXO — Software Studio</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif;
+            background: #070707;
+            color: #f5f5f5;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+        .container {
+            max-width: 600px;
+            text-align: center;
+        }
+        .logo {
+            font-size: 2.5rem;
+            font-weight: 700;
+            letter-spacing: 0.3em;
+            margin-bottom: 1rem;
+        }
+        .tagline {
+            font-size: 1rem;
+            color: #888;
+            letter-spacing: 0.1em;
+            margin-bottom: 3rem;
+        }
+        .divider {
+            width: 40px;
+            height: 1px;
+            background: #333;
+            margin: 0 auto 3rem;
+        }
+        .product {
+            margin-bottom: 2.5rem;
+        }
+        .product-name {
+            font-size: 1.3rem;
+            font-weight: 600;
+            letter-spacing: 0.15em;
+            margin-bottom: 0.5rem;
+        }
+        .product-desc {
+            font-size: 0.95rem;
+            color: #888;
+            line-height: 1.6;
+        }
+        .badge {
+            display: inline-block;
+            font-size: 0.7rem;
+            color: #555;
+            border: 1px solid #333;
+            padding: 0.2rem 0.6rem;
+            border-radius: 3px;
+            letter-spacing: 0.08em;
+            margin-top: 0.8rem;
+        }
+        .contact {
+            margin-top: 3rem;
+            font-size: 0.85rem;
+            color: #555;
+        }
+        .contact a {
+            color: #888;
+            text-decoration: none;
+        }
+        .contact a:hover {
+            color: #f5f5f5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">RLFXO</div>
+        <div class="tagline">SOFTWARE STUDIO</div>
+        <div class="divider"></div>
+        <div class="product">
+            <div class="product-name">BOLX</div>
+            <p class="product-desc">Box Your Life in Seconds.<br>A timeboxing planner for iOS inspired by Elon Musk's productivity method.</p>
+            <div class="badge">COMING SOON</div>
+        </div>
+        <div class="contact">
+            <a href="mailto:contact@rlfxo.com">contact@rlfxo.com</a>
+        </div>
+    </div>
+</body>
+</html>
