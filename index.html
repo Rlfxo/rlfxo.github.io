@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RLFXO — Software Studio</title>
+    <meta name="description" content="RLFXO is an independent software studio. Home of BOLX — a timeboxing planner for iOS.">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -23,6 +24,11 @@
         .container {
             max-width: 600px;
             text-align: center;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
         .logo {
             font-size: 2.5rem;
@@ -56,6 +62,21 @@
             color: #888;
             line-height: 1.6;
         }
+        .product-features {
+            margin-top: 1.5rem;
+            font-size: 0.9rem;
+            color: #777;
+            line-height: 2;
+        }
+        .product-features span {
+            display: inline-block;
+            padding: 0.2rem 0.8rem;
+            border: 1px solid #222;
+            border-radius: 4px;
+            margin: 0.25rem;
+            font-size: 0.8rem;
+            letter-spacing: 0.05em;
+        }
         .badge {
             display: inline-block;
             font-size: 0.7rem;
@@ -64,7 +85,7 @@
             padding: 0.2rem 0.6rem;
             border-radius: 3px;
             letter-spacing: 0.08em;
-            margin-top: 0.8rem;
+            margin-top: 1.2rem;
         }
         .contact {
             margin-top: 3rem;
@@ -78,6 +99,32 @@
         .contact a:hover {
             color: #f5f5f5;
         }
+        footer {
+            width: 100%;
+            max-width: 600px;
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid #1a1a1a;
+            text-align: center;
+        }
+        .footer-links {
+            margin-bottom: 1rem;
+        }
+        .footer-links a {
+            color: #555;
+            text-decoration: none;
+            font-size: 0.8rem;
+            letter-spacing: 0.05em;
+            margin: 0 1rem;
+        }
+        .footer-links a:hover {
+            color: #f5f5f5;
+        }
+        .copyright {
+            font-size: 0.75rem;
+            color: #333;
+            letter-spacing: 0.05em;
+        }
     </style>
 </head>
 <body>
@@ -87,12 +134,35 @@
         <div class="divider"></div>
         <div class="product">
             <div class="product-name">BOLX</div>
-            <p class="product-desc">Box Your Life in Seconds.<br>A timeboxing planner for iOS.</p>
+            <p class="product-desc">
+                Box Your Life in Seconds.<br>
+                A timeboxing planner for iOS.
+            </p>
+            <p class="product-desc" style="margin-top: 1rem;">
+                Plan your day in time blocks. Track how you spend your hours.<br>
+                Sync across devices with iCloud. No account required.
+            </p>
+            <div class="product-features">
+                <span>Day / Week / Month Views</span>
+                <span>Custom Categories</span>
+                <span>Statistics</span>
+                <span>iCloud Sync</span>
+                <span>iPad Support</span>
+                <span>No Ads</span>
+            </div>
             <div class="badge">COMING SOON</div>
         </div>
         <div class="contact">
             <a href="mailto:contact@rlfxo.com">contact@rlfxo.com</a>
         </div>
     </div>
+    <footer>
+        <div class="footer-links">
+            <a href="/privacy.html">Privacy Policy</a>
+            <a href="/terms.html">Terms of Service</a>
+            <a href="/about.html">About</a>
+        </div>
+        <div class="copyright">&copy; 2026 RLFXO. All rights reserved.</div>
+    </footer>
 </body>
 </html>
