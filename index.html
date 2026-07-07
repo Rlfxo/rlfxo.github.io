@@ -4,183 +4,334 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RLFXO — Software Studio</title>
-    <meta name="description" content="RLFXO is an independent software studio. Home of DoGod — a timeboxing planner for iOS.">
+    <meta name="description" content="RLFXO is an independent software studio building thoughtful, private productivity tools. Home of DoGod — a timeboxing planner for iOS.">
+
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+    <!-- Open Graph / Twitter -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="RLFXO">
+    <meta property="og:title" content="RLFXO — Software Studio">
+    <meta property="og:description" content="An independent software studio building thoughtful, private productivity tools. Home of DoGod.">
+    <meta property="og:url" content="https://rlfxo.com/">
+    <meta property="og:image" content="https://rlfxo.com/dogod/dogod_1.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="RLFXO — Software Studio">
+    <meta name="twitter:description" content="An independent software studio building thoughtful, private productivity tools. Home of DoGod.">
+    <meta name="twitter:image" content="https://rlfxo.com/dogod/dogod_1.png">
+
+    <!-- Dark mode pre-applied (prevents FOUC) -->
+    <script>
+        (function () {
+            try {
+                if (localStorage.getItem('color-theme') === 'dark' ||
+                    (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                    document.documentElement.classList.add('dark');
+                }
+            } catch (e) {}
+        })();
+    </script>
+
+    <!-- Tailwind CSS (v3) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: { extend: { colors: { darkBg: '#000000', darkSurface: '#161616' } } }
+        }
+    </script>
+
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css" />
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif;
-            background: #070707;
-            color: #f5f5f5;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 2rem;
+        body { font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-thumb { background: #d1d5db; border-radius: 10px; }
+        .dark ::-webkit-scrollbar-thumb { background: #4b5563; }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 1.2s cubic-bezier(0.25, 1, 0.5, 1), transform 1.2s cubic-bezier(0.25, 1, 0.5, 1);
+            will-change: transform, opacity;
         }
-        .container {
-            max-width: 600px;
-            text-align: center;
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-        .logo {
-            font-size: 2.5rem;
-            font-weight: 700;
-            letter-spacing: 0.3em;
-            margin-bottom: 1rem;
-        }
-        .tagline {
-            font-size: 1rem;
-            color: #888;
-            letter-spacing: 0.1em;
-            margin-bottom: 3rem;
-        }
-        .divider {
-            width: 40px;
-            height: 1px;
-            background: #333;
-            margin: 0 auto 3rem;
-        }
-        .product {
-            margin-bottom: 2.5rem;
-        }
-        .product-name {
-            font-size: 1.3rem;
-            font-weight: 600;
-            letter-spacing: 0.15em;
-            margin-bottom: 0.5rem;
-        }
-        .product-desc {
-            font-size: 0.95rem;
-            color: #888;
-            line-height: 1.6;
-        }
-        .product-features {
-            margin-top: 1.5rem;
-            font-size: 0.9rem;
-            color: #777;
-            line-height: 2;
-        }
-        .product-features span {
-            display: inline-block;
-            padding: 0.2rem 0.8rem;
-            border: 1px solid #222;
-            border-radius: 4px;
-            margin: 0.25rem;
-            font-size: 0.8rem;
-            letter-spacing: 0.05em;
-        }
-        .badge {
-            display: inline-block;
-            font-size: 0.7rem;
-            color: #555;
-            border: 1px solid #333;
-            padding: 0.2rem 0.6rem;
-            border-radius: 3px;
-            letter-spacing: 0.08em;
-            margin-top: 1.2rem;
-        }
-        .notify-btn {
-            display: block;
-            margin: 2rem auto 0;
-            padding: 0.7rem 2rem;
-            font-size: 0.85rem;
-            font-weight: 600;
-            letter-spacing: 0.1em;
-            color: #070707;
-            background: #f5f5f5;
-            border: none;
-            border-radius: 4px;
-            text-decoration: none;
-            transition: opacity 0.2s;
-        }
-        .notify-btn:hover {
-            opacity: 0.8;
-        }
-        .contact {
-            margin-top: 3rem;
-            font-size: 0.85rem;
-            color: #555;
-        }
-        .contact a {
-            color: #888;
-            text-decoration: none;
-        }
-        .contact a:hover {
-            color: #f5f5f5;
-        }
-        footer {
-            width: 100%;
-            max-width: 600px;
-            margin-top: 4rem;
-            padding-top: 2rem;
-            border-top: 1px solid #1a1a1a;
-            text-align: center;
-        }
-        .footer-links {
-            margin-bottom: 1rem;
-        }
-        .footer-links a {
-            color: #555;
-            text-decoration: none;
-            font-size: 0.8rem;
-            letter-spacing: 0.05em;
-            margin: 0 1rem;
-        }
-        .footer-links a:hover {
-            color: #f5f5f5;
-        }
-        .copyright {
-            font-size: 0.75rem;
-            color: #333;
-            letter-spacing: 0.05em;
-        }
+        .reveal.active { opacity: 1; transform: translateY(0); }
     </style>
 </head>
-<body>
-    <div class="container">
-        <div class="logo">RLFXO</div>
-        <div class="tagline">SOFTWARE STUDIO</div>
-        <div class="divider"></div>
-        <div class="product">
-            <div class="product-name">DoGod</div>
-            <p class="product-desc">
-                Do your god-tier day.<br>
-                A timeboxing planner for iOS.
-            </p>
-            <p class="product-desc" style="margin-top: 1rem;">
-                Plan your day in time blocks. Track how you spend your hours.<br>
-                Sync across devices with iCloud. No account required.
-            </p>
-            <div class="product-features">
-                <span>Day / Week / Month Views</span>
-                <span>Custom Categories</span>
-                <span>Statistics</span>
-                <span>iCloud Sync</span>
-                <span>iPad Support</span>
-                <span>No Ads</span>
+<body class="overflow-x-hidden bg-white text-gray-900 dark:bg-darkBg dark:text-white transition-colors duration-300 selection:bg-black selection:text-white dark:selection:bg-white dark:selection:text-black">
+
+    <!-- [GNB] -->
+    <nav class="fixed top-0 left-0 w-full bg-white/80 dark:bg-darkBg/80 backdrop-blur-md z-50 border-b border-gray-200 dark:border-gray-800 transition-colors duration-300">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+            <a href="#hero" class="gnb-link font-bold text-lg sm:text-xl tracking-[0.25em] text-black dark:text-white">RLFXO</a>
+            <div class="flex items-center gap-4 sm:gap-7 text-xs sm:text-sm font-medium text-gray-600 dark:text-gray-400">
+                <a href="#dogod" class="gnb-link hover:text-black dark:hover:text-white transition-colors" data-i18n="nav.product">Product</a>
+                <a href="#principles" class="gnb-link hidden sm:inline hover:text-black dark:hover:text-white transition-colors" data-i18n="nav.principles">Principles</a>
+                <a href="/about.html" class="hover:text-black dark:hover:text-white transition-colors" data-i18n="nav.about">About</a>
+                <div class="flex items-center rounded-full border border-gray-300 dark:border-gray-700 overflow-hidden text-[11px] font-bold">
+                    <button type="button" data-lang="en" aria-label="English" class="lang-btn px-2 py-1 leading-none transition-colors">EN</button>
+                    <button type="button" data-lang="ko" aria-label="한국어" class="lang-btn px-2 py-1 leading-none transition-colors">KR</button>
+                </div>
+                <button id="theme-toggle" type="button" aria-label="Toggle theme" class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none rounded-full p-2 transition-colors">
+                    <svg id="theme-toggle-light-icon" class="hidden w-4 h-4 sm:w-5 sm:h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                    <svg id="theme-toggle-dark-icon" class="hidden w-4 h-4 sm:w-5 sm:h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+                </button>
             </div>
-            <a class="notify-btn" href="https://forms.gle/MpsDyhkXCTHpGfSXA" target="_blank" rel="noopener">Get Notified at Launch</a>
-            <div class="badge">COMING SOON</div>
         </div>
-        <div class="contact">
-            <a href="mailto:contact@rlfxo.com">contact@rlfxo.com</a>
+    </nav>
+
+    <!-- [Hero] -->
+    <section id="hero" class="pt-28 pb-16 px-4 sm:px-6 max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12 md:gap-16 min-h-[calc(100vh-4rem)]">
+        <div class="w-full flex-1 text-center md:text-left space-y-5 sm:space-y-6 reveal active">
+            <div class="inline-flex items-center gap-2 border border-gray-300 dark:border-gray-700 text-gray-700 dark:text-gray-300 font-medium text-xs sm:text-sm px-3.5 py-1 rounded-full">
+                <span class="w-1.5 h-1.5 bg-black dark:bg-white rounded-full"></span>
+                <span data-i18n="hero.badge">Independent Software Studio</span>
+            </div>
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-[1.1] tracking-tight text-black dark:text-white" data-i18n="hero.h1">
+                Software that<br>respects your time.
+            </h1>
+            <p class="text-gray-500 dark:text-gray-400 text-base sm:text-lg md:text-xl leading-relaxed max-w-lg mx-auto md:mx-0" data-i18n="hero.sub">
+                RLFXO is an independent studio crafting thoughtful, private productivity tools — built for people who want to own their day, not be owned by it.
+            </p>
+            <div class="pt-4 flex flex-col sm:flex-row gap-3 justify-center md:justify-start">
+                <a href="/dogod/" class="bg-black dark:bg-white text-white dark:text-black font-semibold px-6 py-3.5 sm:px-8 sm:py-4 rounded-xl hover:opacity-85 transition-all text-center text-sm sm:text-base" data-i18n="hero.cta1">
+                    Explore DoGod
+                </a>
+                <a href="#dogod" class="gnb-link bg-white dark:bg-darkSurface text-black dark:text-white border border-gray-300 dark:border-gray-700 font-semibold px-6 py-3.5 sm:px-8 sm:py-4 rounded-xl hover:bg-gray-100 dark:hover:bg-neutral-800 transition-colors text-center text-sm sm:text-base" data-i18n="hero.cta2">
+                    Our first product
+                </a>
+            </div>
         </div>
-    </div>
-    <footer>
-        <div class="footer-links">
-            <a href="/privacy.html">Privacy Policy</a>
-            <a href="/terms.html">Terms of Service</a>
-            <a href="/about.html">About</a>
+
+        <div class="w-full flex-1 flex justify-center reveal active">
+            <div class="relative w-full max-w-[280px] sm:max-w-[300px] h-[560px] sm:h-[620px] bg-black dark:bg-[#222222] rounded-[40px] sm:rounded-[48px] p-2 border-4 border-gray-900 dark:border-gray-800 ring-1 ring-gray-200 dark:ring-gray-800 shadow-2xl">
+                <img src="/dogod/dogod_1.png" alt="DoGod — daily statistics screen" class="w-full h-full object-cover rounded-[32px] sm:rounded-[38px]">
+            </div>
         </div>
-        <div class="copyright">&copy; 2026 RLFXO. All rights reserved.</div>
+    </section>
+
+    <!-- [Product spotlight — DoGod] -->
+    <section id="dogod" class="bg-gray-50 dark:bg-darkSurface py-16 sm:py-24 px-4 sm:px-6 border-t border-gray-200 dark:border-gray-800 transition-colors">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center space-y-3 sm:space-y-4 mb-12 sm:mb-16 reveal">
+                <span class="text-gray-500 dark:text-gray-400 font-bold text-xs sm:text-sm tracking-widest uppercase" data-i18n="prod.label">Our first product</span>
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-black dark:text-white">DoGod</h2>
+                <p class="text-gray-600 dark:text-gray-400 text-base sm:text-lg md:text-xl leading-relaxed max-w-xl mx-auto" data-i18n="prod.p">
+                    Do your god-tier day. A timeboxing planner for iOS — empty your mind, plan your hours in blocks, and see exactly where your time goes.
+                </p>
+                <div class="flex flex-wrap justify-center gap-2 pt-2 max-w-2xl mx-auto">
+                    <span class="text-xs sm:text-sm text-gray-600 dark:text-gray-400 border border-gray-300 dark:border-gray-700 rounded-full px-3 py-1" data-i18n="prod.chip1">Day / Week / Month</span>
+                    <span class="text-xs sm:text-sm text-gray-600 dark:text-gray-400 border border-gray-300 dark:border-gray-700 rounded-full px-3 py-1" data-i18n="prod.chip2">Custom Categories</span>
+                    <span class="text-xs sm:text-sm text-gray-600 dark:text-gray-400 border border-gray-300 dark:border-gray-700 rounded-full px-3 py-1" data-i18n="prod.chip3">Statistics</span>
+                    <span class="text-xs sm:text-sm text-gray-600 dark:text-gray-400 border border-gray-300 dark:border-gray-700 rounded-full px-3 py-1" data-i18n="prod.chip4">iCloud Sync</span>
+                    <span class="text-xs sm:text-sm text-gray-600 dark:text-gray-400 border border-gray-300 dark:border-gray-700 rounded-full px-3 py-1" data-i18n="prod.chip5">iPad Support</span>
+                    <span class="text-xs sm:text-sm text-gray-600 dark:text-gray-400 border border-gray-300 dark:border-gray-700 rounded-full px-3 py-1" data-i18n="prod.chip6">No Ads</span>
+                </div>
+            </div>
+
+            <!-- 3-up screenshot showcase (app flow: Brain → TimeBox → Stats) -->
+            <div class="grid grid-cols-3 gap-3 sm:gap-6 max-w-3xl mx-auto mb-12 sm:mb-16">
+                <figure class="reveal" style="transition-delay: 0s;">
+                    <img src="/dogod/dogod_2.png" alt="DoGod — Brain (mind dump) screen" loading="lazy" decoding="async" class="w-full rounded-2xl sm:rounded-3xl border border-gray-200 dark:border-gray-800 shadow-xl">
+                    <figcaption class="text-center text-[11px] sm:text-xs text-gray-500 dark:text-gray-400 mt-2 sm:mt-3" data-i18n="prod.cap1">Brain — dump every thought</figcaption>
+                </figure>
+                <figure class="reveal" style="transition-delay: 0.1s;">
+                    <img src="/dogod/dogod_3.png" alt="DoGod — TimeBox timeline screen" loading="lazy" decoding="async" class="w-full rounded-2xl sm:rounded-3xl border border-gray-200 dark:border-gray-800 shadow-xl">
+                    <figcaption class="text-center text-[11px] sm:text-xs text-gray-500 dark:text-gray-400 mt-2 sm:mt-3" data-i18n="prod.cap2">TimeBox — plan in blocks</figcaption>
+                </figure>
+                <figure class="reveal" style="transition-delay: 0.2s;">
+                    <img src="/dogod/dogod_1.png" alt="DoGod — Stats screen" loading="lazy" decoding="async" class="w-full rounded-2xl sm:rounded-3xl border border-gray-200 dark:border-gray-800 shadow-xl">
+                    <figcaption class="text-center text-[11px] sm:text-xs text-gray-500 dark:text-gray-400 mt-2 sm:mt-3" data-i18n="prod.cap3">Stats — review your day</figcaption>
+                </figure>
+            </div>
+
+            <div class="flex flex-col sm:flex-row gap-3 justify-center items-center reveal">
+                <a href="/dogod/" class="bg-black dark:bg-white text-white dark:text-black font-semibold px-6 py-3.5 sm:px-8 sm:py-4 rounded-xl hover:opacity-85 transition-all text-center text-sm sm:text-base" data-i18n="prod.cta1">
+                    View the full DoGod page
+                </a>
+                <a href="https://forms.gle/MpsDyhkXCTHpGfSXA" target="_blank" rel="noopener" class="bg-white dark:bg-darkBg text-black dark:text-white border border-gray-300 dark:border-gray-700 font-semibold px-6 py-3.5 sm:px-8 sm:py-4 rounded-xl hover:bg-gray-100 dark:hover:bg-neutral-900 transition-colors text-center text-sm sm:text-base" data-i18n="prod.cta2">
+                    Get notified at launch
+                </a>
+                <span class="text-xs text-gray-500 dark:text-gray-500 border border-gray-300 dark:border-gray-700 rounded-full px-3 py-1.5 tracking-wide" data-i18n="prod.badge">COMING SOON</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- [Principles] -->
+    <section id="principles" class="py-16 sm:py-24 px-4 sm:px-6 max-w-5xl mx-auto">
+        <div class="text-center space-y-3 sm:space-y-4 mb-12 sm:mb-16 reveal">
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight text-black dark:text-white" data-i18n="prin.h2">How we build</h2>
+            <p class="text-gray-500 dark:text-gray-400 text-sm sm:text-base md:text-lg" data-i18n="prin.sub">A few principles we don't compromise on.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
+            <div class="bg-gray-50 dark:bg-darkSurface p-6 sm:p-8 rounded-2xl border border-gray-100 dark:border-gray-800 space-y-3 reveal" style="transition-delay: 0s;">
+                <h3 class="text-lg sm:text-xl font-bold text-black dark:text-white" data-i18n="prin1.h3">Privacy first</h3>
+                <p class="text-gray-600 dark:text-gray-400 text-sm sm:text-base leading-relaxed" data-i18n="prin1.p">No accounts, no tracking, no ads. Your data stays on your device and in your own iCloud account.</p>
+            </div>
+            <div class="bg-gray-50 dark:bg-darkSurface p-6 sm:p-8 rounded-2xl border border-gray-100 dark:border-gray-800 space-y-3 reveal" style="transition-delay: 0.1s;">
+                <h3 class="text-lg sm:text-xl font-bold text-black dark:text-white" data-i18n="prin2.h3">Quality over quantity</h3>
+                <p class="text-gray-600 dark:text-gray-400 text-sm sm:text-base leading-relaxed" data-i18n="prin2.p">We'd rather build one excellent app than ten mediocre ones. Every detail earns its place.</p>
+            </div>
+            <div class="bg-gray-50 dark:bg-darkSurface p-6 sm:p-8 rounded-2xl border border-gray-100 dark:border-gray-800 space-y-3 reveal" style="transition-delay: 0.2s;">
+                <h3 class="text-lg sm:text-xl font-bold text-black dark:text-white" data-i18n="prin3.h3">Accessible by design</h3>
+                <p class="text-gray-600 dark:text-gray-400 text-sm sm:text-base leading-relaxed" data-i18n="prin3.p">Core features are free. No subscriptions and no paywalls on the essentials — pay once, only if you want more.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- [Contact band] -->
+    <section class="bg-black dark:bg-white border-t border-gray-800 dark:border-gray-200 py-16 sm:py-20 px-4 sm:px-6 text-center transition-colors">
+        <div class="max-w-2xl mx-auto space-y-5 sm:space-y-6 reveal">
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight text-white dark:text-black" data-i18n="contact.h2">Say hello.</h2>
+            <p class="text-gray-400 dark:text-gray-600 text-sm sm:text-base md:text-lg" data-i18n="contact.p">Questions, ideas, or feedback — we'd love to hear from you.</p>
+            <a href="mailto:contact@rlfxo.com" class="inline-block bg-white dark:bg-black text-black dark:text-white font-bold px-6 py-3.5 sm:px-8 sm:py-4 rounded-xl hover:bg-neutral-200 dark:hover:opacity-85 transition-colors text-sm sm:text-base">contact@rlfxo.com</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white dark:bg-darkBg py-10 sm:py-12 px-4 sm:px-6 border-t border-gray-200 dark:border-gray-800 transition-colors">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6 text-[11px] sm:text-xs text-gray-500 dark:text-gray-400 text-center md:text-left">
+            <p class="font-bold text-gray-800 dark:text-gray-200 text-lg tracking-[0.25em]">RLFXO</p>
+            <p>© 2026 RLFXO. All rights reserved.</p>
+            <div class="space-x-3 sm:space-x-4">
+                <a href="/dogod/" class="hover:text-black dark:hover:text-white">DoGod</a>
+                <a href="/privacy.html" class="hover:text-black dark:hover:text-white" data-i18n="footer.privacy">Privacy Policy</a>
+                <a href="/terms.html" class="hover:text-black dark:hover:text-white" data-i18n="footer.terms">Terms of Service</a>
+                <a href="/about.html" class="hover:text-black dark:hover:text-white" data-i18n="footer.about">About</a>
+            </div>
+        </div>
     </footer>
+
+    <script>
+        // Dark mode toggle (initial class already applied in <head>)
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        const darkIcon = document.getElementById('theme-toggle-dark-icon');
+        const lightIcon = document.getElementById('theme-toggle-light-icon');
+
+        if (document.documentElement.classList.contains('dark')) {
+            lightIcon.classList.remove('hidden');
+        } else {
+            darkIcon.classList.remove('hidden');
+        }
+
+        themeToggleBtn.addEventListener('click', function () {
+            darkIcon.classList.toggle('hidden');
+            lightIcon.classList.toggle('hidden');
+            if (document.documentElement.classList.contains('dark')) {
+                document.documentElement.classList.remove('dark');
+                localStorage.setItem('color-theme', 'light');
+            } else {
+                document.documentElement.classList.add('dark');
+                localStorage.setItem('color-theme', 'dark');
+            }
+        });
+
+        // Language (i18n) toggle — English base in markup, Korean via dictionary
+        const I18N_KO = {
+            "nav.product": "제품",
+            "nav.principles": "원칙",
+            "nav.about": "소개",
+            "hero.badge": "독립 소프트웨어 스튜디오",
+            "hero.h1": "당신의 시간을<br>존중하는 소프트웨어.",
+            "hero.sub": "RLFXO는 사려 깊고 프라이빗한 생산성 도구를 만드는 독립 스튜디오입니다. 하루에 끌려다니지 않고, 하루를 스스로 소유하려는 사람들을 위해 만듭니다.",
+            "hero.cta1": "DoGod 살펴보기",
+            "hero.cta2": "첫 번째 제품",
+            "prod.label": "첫 번째 제품",
+            "prod.p": "갓생을 사세요. iOS 타임박싱 플래너로 머릿속을 비우고, 시간을 블록으로 계획하고, 내 시간이 어디로 가는지 정확히 확인하세요.",
+            "prod.chip1": "일 / 주 / 월",
+            "prod.chip2": "맞춤 카테고리",
+            "prod.chip3": "통계",
+            "prod.chip4": "iCloud 동기화",
+            "prod.chip5": "iPad 지원",
+            "prod.chip6": "광고 없음",
+            "prod.cap1": "Brain — 모든 생각을 쏟아내기",
+            "prod.cap2": "TimeBox — 블록으로 계획하기",
+            "prod.cap3": "Stats — 하루를 회고하기",
+            "prod.cta1": "DoGod 전체 페이지 보기",
+            "prod.cta2": "출시 알림 받기",
+            "prod.badge": "출시 예정",
+            "prin.h2": "우리가 만드는 방식",
+            "prin.sub": "타협하지 않는 몇 가지 원칙.",
+            "prin1.h3": "프라이버시 우선",
+            "prin1.p": "계정도, 추적도, 광고도 없습니다. 데이터는 당신의 기기와 iCloud 계정에만 남습니다.",
+            "prin2.h3": "양보다 질",
+            "prin2.p": "평범한 앱 열 개보다 훌륭한 앱 하나를 만듭니다. 모든 디테일은 존재할 이유가 있어야 합니다.",
+            "prin3.h3": "누구나 쓸 수 있게",
+            "prin3.p": "핵심 기능은 무료입니다. 구독도, 필수 기능에 대한 유료 장벽도 없습니다. 더 원할 때만, 한 번만 결제하세요.",
+            "contact.h2": "인사를 건네세요.",
+            "contact.p": "질문, 아이디어, 피드백 — 무엇이든 환영합니다.",
+            "footer.privacy": "개인정보처리방침",
+            "footer.terms": "서비스 이용약관",
+            "footer.about": "소개"
+        };
+        const I18N_TITLE = { en: document.title, ko: "RLFXO — 소프트웨어 스튜디오" };
+
+        const i18nEls = document.querySelectorAll('[data-i18n]');
+        const EN_TEXT = {};
+        i18nEls.forEach(el => { EN_TEXT[el.dataset.i18n] = el.innerHTML; });
+        const langBtns = document.querySelectorAll('.lang-btn');
+
+        function applyLang(lang) {
+            if (lang !== 'ko') lang = 'en';
+            document.documentElement.lang = lang;
+            document.title = I18N_TITLE[lang] || I18N_TITLE.en;
+            i18nEls.forEach(el => {
+                const k = el.dataset.i18n;
+                const v = lang === 'ko' ? (I18N_KO[k] != null ? I18N_KO[k] : EN_TEXT[k]) : EN_TEXT[k];
+                if (v != null) el.innerHTML = v;
+            });
+            langBtns.forEach(b => {
+                const on = b.dataset.lang === lang;
+                b.classList.toggle('bg-black', on);
+                b.classList.toggle('text-white', on);
+                b.classList.toggle('dark:bg-white', on);
+                b.classList.toggle('dark:text-black', on);
+                b.classList.toggle('text-gray-500', !on);
+                b.classList.toggle('dark:text-gray-400', !on);
+            });
+            try { localStorage.setItem('site-lang', lang); } catch (e) {}
+        }
+
+        let savedLang = 'en';
+        try { savedLang = localStorage.getItem('site-lang') || 'en'; } catch (e) {}
+        applyLang(savedLang);
+        langBtns.forEach(b => b.addEventListener('click', () => applyLang(b.dataset.lang)));
+
+        // Reveal on scroll
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.05, rootMargin: "0px 0px -30px 0px" });
+        document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+        // Custom smooth scroll for in-page anchors
+        document.querySelectorAll('.gnb-link[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetElement = document.querySelector(this.getAttribute('href'));
+                if (!targetElement) return;
+                const offsetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - 64;
+                const startPosition = window.pageYOffset;
+                const distance = offsetPosition - startPosition;
+                const duration = 800;
+                let start = null;
+                window.requestAnimationFrame(function step(timestamp) {
+                    if (!start) start = timestamp;
+                    const progress = timestamp - start;
+                    const ease = progress < duration / 2
+                        ? 4 * Math.pow(progress / duration, 3)
+                        : 1 - Math.pow(-2 * (progress / duration) + 2, 3) / 2;
+                    window.scrollTo(0, startPosition + distance * ease);
+                    if (progress < duration) window.requestAnimationFrame(step);
+                    else window.scrollTo(0, offsetPosition);
+                });
+            });
+        });
+    </script>
 </body>
 </html>
